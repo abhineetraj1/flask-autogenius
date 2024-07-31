@@ -101,7 +101,7 @@ function listen() {
 	for (var i = data.length - 1; i >= 0; i--) {
 		n=n+data[i];
 	}
-	utterance.text=n;
+	utterance.text=n.replaceAll("<br>","");
 	if (document.getElementById("lsn").innerText.indexOf("Listen") > -1) {
 		speechSynthesis.speak(utterance);
 		document.getElementById("lsn").innerHTML='Stop<i class="material-icons">mic_off</i>';
