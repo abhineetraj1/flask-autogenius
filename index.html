@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AutoGenius</title>
+	<link rel="shortcut icon" href="/static/media/favicon.png">
+	<link rel="stylesheet" type="text/css" href="/static/style/index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<div class="content">
+	<p id="tt" style="color: #0179ea;">AutoGenius</p>
+	<p class="desc" id="ps"><font color="#0179ea">Problem Statement :</font> 3.2.1.7 Generative AI solutions for developing proposals based on customer requirements – AI tools for generating customized proposals tailored to customer demands.</p>
+	<p class="desc" id="solution">We have developed a car recommendation system designed to provide personalized recommendations tailored to the specific requirements of each customer. This system utilizes advanced algorithms to analyze customer preferences, vehicle specifications, and other relevant factors to deliver optimal recommendations. By considering factors such as budget, desired features, performance metrics, and user feedback, our system aims to assist customers in selecting the most suitable car that aligns with their individual needs and preferences.</p>
+	<button onclick="continu()" style="width: 120px;">Continue <i class="material-icons" style="font-size: 20px;">chevron_right</i></button>
+</div>
+
+<div class="content">
+	<p class="tt-con" id="EnterName"></p>
+	<p><input class="text-inpt" type="text" placeholder="Enter your name" id="name" style="display: none;">
+	<button float="left" id="LetsGo" style="display:none;" onclick="LetsGo()">Let's go<i class="material-icons" style="font-size: 20px;">chevron_right</i></button></p>
+	<script type="text/javascript">
+		document.getElementById("name").oninput = function() {
+			document.getElementById("LetsGo").style.display="flex";
+		}
+	</script>
+</div>
+
+<div class="content">
+	<p class="tt-con" id="EnterOccupation"></p>
+	<p><input class="text-inpt" type="text" placeholder="Enter your occupation" id="Occupation" style="display: none;">
+	<button style="height:50px;width: 50px;" onclick="reset()"><i class="material-icons">restart_alt</i></button><button float="left" id="GoForward" style="display:none;" onclick="GoForward()">Go forward<i class="material-icons" style="font-size: 20px;">chevron_right</i></button></p>
+	<script type="text/javascript">
+		document.getElementById("Occupation").oninput = function() {
+			document.getElementById("GoForward").style.display="flex";
+		}
+	</script>
+</div>
+
+<div class="content">
+	<p class="tt-con" id="EnterIncome"></p>
+	<p><input class="text-inpt" type="text" placeholder="Enter your monthly income" id="Income" style="display: none;">
+	<button style="height:50px;width: 50px;" onclick="reset()"><i class="material-icons">restart_alt</i></button><button float="left" id="Proceed" style="display:none;" onclick="Proceed()">Proceed<i class="material-icons" style="font-size: 20px;">chevron_right</i></button></p>
+	<script type="text/javascript">
+		document.getElementById("Income").oninput = function() {
+			document.getElementById("Proceed").style.display="flex";
+		}
+	</script>
+</div>
+
+<div class="content">
+	<p class="tt-con" id="EnterDistance"></p>
+	<p><input class="text-inpt" type="text" placeholder="Enter distance between your home and work place" id="Distance" style="display: none;">
+	<button style="height:50px;width: 50px;" onclick="reset()"><i class="material-icons">restart_alt</i></button><button float="left" id="GetRecommendations" style="display:none;width: 220px;" onclick="GetRecommendations()">Get Recommendations<i class="material-icons" style="font-size: 20px;">track_changes</i></button></p>
+	<script type="text/javascript">
+		document.getElementById("Distance").oninput = function() {
+			document.getElementById("GetRecommendations").style.display="flex";
+		}
+	</script>
+</div>
+
+<div class="content" style="background: #22211E;">
+	<center>
+		<img src="/static/media/load.gif" width="400px">
+	</center>
+	<p style="text-align: center;" id="Processing"></p>
+</div>
+
+<div class="content">
+	<p id="rcm" style="display:none;justify-content: space-between;"><button onclick="reset()">Reset<i class="material-icons">restart_alt</i></button><span><button onclick="listen()" id="lsn">Listen<i class="material-icons">mic</i></button></span></p>
+	<p class="tt-con" style="margin-top: 10px;" id="Recomm"></p>
+</div>
+
+<script type="text/javascript" src="/static/script/cursor.js"></script>
+<script type="text/javascript" src="/static/script/text_animator.js"></script>
+<script type="text/javascript" src="/static/script/index.js"></script>
+</body>
+</html>
