@@ -4,6 +4,9 @@ Problem Statement : 3.2.1.7 Generative AI solutions for developing proposals bas
 
 We have developed a car recommendation system designed to provide personalized recommendations tailored to the specific requirements of each customer. This system utilizes advanced algorithms to analyze customer preferences, vehicle specifications, and other relevant factors to deliver optimal recommendations. By considering factors such as budget, desired features, performance metrics, and user feedback, our system aims to assist customers in selecting the most suitable car that aligns with their individual needs and preferences.
 
+
+Deployment: https://abhineetraj.pythonanywhere.com/
+
 ## Installation
 
 This README provides instructions for installing and running the AutoGenius Flask application, which utilizes the Gemini API for personalized car recommendations. The application is designed to be hosted on Azure Web Hosting.
